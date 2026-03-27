@@ -27,7 +27,7 @@ time.sleep(5)  # Wait for login form to render
 input_id = driver.find_element(By.NAME, "email")  # Find the username input field
 input_id.click()  # Focus the input field
 input_id.send_keys(USERNAME)  # Enter the username
-print("입력된 이메일:", input_id.get_attribute("value"))  # Verify email input
+# print("입력된 이메일:", input_id.get_attribute("value"))  # Verify email input
 
 input_pw = driver.find_element(By.NAME, "pass")  # Find the password input field
 input_pw.click()  # Focus the input field
@@ -35,4 +35,4 @@ input_pw.send_keys(PASSWORD)  # Enter the password
 input_pw.send_keys(Keys.RETURN)  # Submit the form by pressing Enter
 
 time.sleep(10)  # Wait for login to complete
-print("현재 URL:", driver.current_url)  # Print the current URL to verify login
+# print("현재 URL:", driver.current_url)  # Print the current URL to verify login
