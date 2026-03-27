@@ -11,3 +11,4 @@ url = "https://www.instagram.com/"  # URL of the Instagram
 driver.get(url)  # Open the Instagram website
 
 time.sleep(20)  # Wait for 20 seconds to see the opened page
+xpath = '//*[@id="loginForm"]/div/div[1]/div/label/input'  # XPath of the username input field
